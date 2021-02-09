@@ -11,6 +11,11 @@ class ViewController: UIViewController {
     
     var isLightOn = true
     
+    
+    
+    
+    
+    
     override var prefersStatusBarHidden: Bool {
         return true 
     }
@@ -20,12 +25,15 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         updateUI()
-      //  view.backgroundColor = .black
+      
     }
     
     /// This function changing screen color
     fileprivate func updateUI() {
         view.backgroundColor = isLightOn ? .white : .black
+     
+        
+        
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -34,7 +42,7 @@ class ViewController: UIViewController {
         
     }
     
-    /// This function change screen color after toch
+    
    
     
 }
